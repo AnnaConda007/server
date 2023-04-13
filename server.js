@@ -40,7 +40,7 @@ app.post("/sendmail", async (req, res) => {
     res.status(500).json({ message: "Ошибка отправки" });
   }
 });
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 10000;
 app.listen(PORT, () => {
   console.log(`Сервер запущен на порту ${PORT}`);
 });
