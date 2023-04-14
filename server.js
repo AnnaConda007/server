@@ -19,7 +19,7 @@ app.post("/sendmail", async (req, res) => {
       secure: true,
       auth: {
         user: "annahrulkova@yandex.ru",
-        pass: `${password}`,
+        pass: "gkxcgpcawppuxwmb",
       },
     });
 
