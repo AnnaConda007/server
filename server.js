@@ -1,4 +1,5 @@
 const express = require("express");
+require('dotenv').config()
 const cors = require("cors");
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
@@ -40,7 +41,7 @@ app.post("/sendmail", async (req, res) => {
     res.status(500).json({ message: "Ошибка отправки" });
   }
 });
-const PORT = process.env.PORT || 10000;
+const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {
   console.log(`Сервер запущен на порту ${PORT}`);
 });
